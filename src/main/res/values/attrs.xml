@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BackgroundShape">
+        <attr name="shape_name" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="line" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+
+        <attr name="shape_corners_radius" format="dimension" />
+        <attr name="shape_corners_topLeftRadius" format="dimension" />
+        <attr name="shape_corners_topRightRadius" format="dimension" />
+        <attr name="shape_corners_bottomLeftRadius" format="dimension" />
+        <attr name="shape_corners_bottomRightRadius" format="dimension" />
+
+        <attr name="shape_gradient_type" format="enum">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+        <attr name="shape_gradient_useLevel" format="boolean" />
+        <attr name="shape_gradient_angle" format="integer" />
+        <attr name="shape_gradient_centerX" format="float" />
+        <attr name="shape_gradient_centerY" format="float" />
+        <attr name="shape_gradient_startColor" format="color" />
+        <attr name="shape_gradient_centerColor" format="color" />
+        <attr name="shape_gradient_endColor" format="color" />
+        <attr name="shape_gradient_gradientRadius" format="dimension" />
+
+        <attr name="shape_padding_left" format="dimension" />
+        <attr name="shape_padding_top" format="dimension" />
+        <attr name="shape_padding_right" format="dimension" />
+        <attr name="shape_padding_bottom" format="dimension" />
+
+        <attr name="shape_size_width" format="dimension">
+            <enum name="wrap_content" value="-2" />
+            <enum name="match_parent" value="-1" />
+        </attr>
+        <attr name="shape_size_height" format="dimension">
+            <enum name="wrap_content" value="-2" />
+            <enum name="match_parent" value="-1" />
+        </attr>
+
+        <attr name="shape_solid_color" format="color" />
+
+        <attr name="shape_stroke_width" format="dimension" />
+        <attr name="shape_stroke_color" format="color" />
+        <attr name="shape_stroke_dashWidth" format="dimension" />
+        <attr name="shape_stroke_dashGap" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="BackgroundSelector">
+        <attr name="state_pressed" format="reference|color" />
+        <attr name="state_unpressed" format="reference|color" />
+        <attr name="state_focused" format="reference|color" />
+        <attr name="state_unfocused" format="reference|color" />
+        <attr name="state_selected" format="reference|color" />
+        <attr name="state_unselected" format="reference|color" />
+        <attr name="state_checkable" format="reference|color" />
+        <attr name="state_uncheckable" format="reference|color" />
+        <attr name="state_checked" format="reference|color" />
+        <attr name="state_unchecked" format="reference|color" />
+        <attr name="state_enabled" format="reference|color" />
+        <attr name="state_unenabled" format="reference|color" />
+        <attr name="state_window_focused" format="reference|color" />
+        <attr name="state_window_unfocused" format="reference|color" />
+        <attr name="state_hovered" format="reference|color" />
+        <attr name="state_unhovered" format="reference|color" />
+        <attr name="state_activated" format="reference|color" />
+        <attr name="state_unactivated" format="reference|color" />
+    </declare-styleable>
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--    <selector xmlns:android="http://schemas.android.com/apk/res/android" >-->
+    <!--        <item-->
+    <!--            android:color="hex_color"-->
+    <!--            android:lStar="floating_point_value"-->
+    <!--            android:state_pressed=["true" | "false"]-->
+    <!--        android:state_focused=["true" | "false"]-->
+    <!--        android:state_selected=["true" | "false"]-->
+    <!--        android:state_checkable=["true" | "false"]-->
+    <!--        android:state_checked=["true" | "false"]-->
+    <!--        android:state_enabled=["true" | "false"]-->
+    <!--        android:state_window_focused=["true" | "false"] />-->
+
+    <!--    android:state_pressed=["true" | "false"]-->
+    <!--    android:state_focused=["true" | "false"]-->
+    <!--    android:state_selected=["true" | "false"]-->
+    <!--    android:state_checkable=["true" | "false"]-->
+    <!--    android:state_checked=["true" | "false"]-->
+    <!--    android:state_enabled=["true" | "false"]-->
+    <!--    android:state_hovered=["true" | "false"]-->
+    <!--    android:state_activated=["true" | "false"]-->
+
+    <!--    android:state_window_focused=["true" | "false"] />-->
+    <!--    </selector>-->
+
+
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--    <shape-->
+    <!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--        android:shape=["rectangle" | "oval" | "line" | "ring"] >-->
+    <!--    <corners-->
+    <!--        android:radius="integer"-->
+    <!--        android:topLeftRadius="integer"-->
+    <!--        android:topRightRadius="integer"-->
+    <!--        android:bottomLeftRadius="integer"-->
+    <!--        android:bottomRightRadius="integer" />-->
+    <!--    <gradient-->
+    <!--        android:angle="integer"-->
+    <!--        android:centerX="float"-->
+    <!--        android:centerY="float"-->
+    <!--        android:centerColor="integer"-->
+    <!--        android:endColor="color"-->
+    <!--        android:gradientRadius="integer"-->
+    <!--        android:startColor="color"-->
+    <!--        android:type=["linear" | "radial" | "sweep"]-->
+    <!--    android:useLevel=["true" | "false"] />-->
+    <!--    <padding-->
+    <!--        android:left="integer"-->
+    <!--        android:top="integer"-->
+    <!--        android:right="integer"-->
+    <!--        android:bottom="integer" />-->
+    <!--    <size-->
+    <!--        android:width="integer"-->
+    <!--        android:height="integer" />-->
+    <!--    <solid-->
+    <!--        android:color="color" />-->
+    <!--    <stroke-->
+    <!--        android:width="integer"-->
+    <!--        android:color="color"-->
+    <!--        android:dashWidth="integer"-->
+    <!--        android:dashGap="integer" />-->
+    <!--</shape>-->
+
+</resources>
